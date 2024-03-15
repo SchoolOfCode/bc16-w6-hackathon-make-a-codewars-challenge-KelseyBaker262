@@ -22,9 +22,9 @@ OVERALL TASK:
 - Consider the inputs that will go in the solution function ✅
 - Encorporate Equivalency Partitioning, Boundary Value Analysis, and Decision Tables✅
 - Create tests which fully cover the expected functionality
-- Use TDD and AAA
+- Use TDD and AAA✅
 
-3. Verify my tests by adding a function which passes the tests
+3. Verify my tests by adding a function which passes the tests✅
 
 4. Remove working solution, share kata repo and add the description
 
@@ -70,11 +70,11 @@ Design Test Cases:
 
 | Test Case | Input Value    | Expected Result                                                                            |
 | --------- | -------------- | ------------------------------------------------------------------------------------------ |
-| TC1       | non-numeric    | Error message                                                                              |
-| TC2       | 2021-03-14     | Valid, displays pet name has not visited in 3 years and needs to be taken off the register |
-| TC3       | 2021-03-16     | Invalid, shouldn't be displayed in returned string                                         |
+| TC5       | non-numeric    | Error message                                                                              |
+| TC1       | 2021-03-14     | Valid, displays pet name has not visited in 3 years and needs to be taken off the register |
+| TC2       | 2021-03-16     | Invalid, shouldn't be displayed in returned string                                         |
 | TC4       | Tomorrows date | Error message                                                                              |
-| TC5       | Todays date    | Invalid, shouldn't be displayed in returned string                                         |
+| TC3       | Todays date    | Invalid, shouldn't be displayed in returned string                                         |
 
 Decision Table:
 
@@ -88,19 +88,18 @@ Decision Table:
 
 MVPs:
 
-MVP 1:
+MVP 1: ✅
 
 - Ensure all files are set up correctly
 - Create a basic test that will fail
-  (Comparing todays date and one less than 3 years ago, 2021-03-16)
 - Create a basic function that will pass
-  (Comparing todays date and one less than 3 years ago,2021-03-16)
+  (Comparing todays date and one more than 3 years ago, 2021-03-14)
 
-MVP 2:
+MVP 2: ✅
 
 - Create a basic test that will pass
 - Create a basic function that will pass
-  (Comparing todays date and one more than 3 years ago, 2021-03-14)
+  (Comparing todays date and one less than 3 years ago,2021-03-16)
 
 MVP 3:
 
@@ -112,3 +111,21 @@ MVP 4:
 
 MVP 5:
 -Create a test that will fail a non-numeric date
+
+REFLECTIONS: final result, feedback,
+
+Challenges:
+
+- I reminded myself in my planning to not over complicate things but I did over complicate by encorporating todays date
+
+- In my function I was console logging the pet which needed to be identified but then when I realised that I needed to change console log to return, I was only able to return the first pet instead of all that visted 3 years ago so I had to refactor my plan and story as I didn't have enough time to change it
+
+Things I would do differntly nect time:
+
+- Change my story and function to be able to return all pets who visited over 3 years ago instead of the first one
+
+What went well:
+
+- I'm happy with my level of planning
+
+- I have been able to achieve MVPs and get functioning tests
