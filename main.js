@@ -21,59 +21,6 @@
 
 //*This test was made on 2024.03.15 so the example dates show dates relevant to that, but your datas in the array will be appriate for the day you're doing this kata*
 
-// export function checkVetsVisits(visitDatesArray) {
-//   // Good luck!
-// }
-
-export function checkVetVisits(visitDatesArray) {
-  const today = new Date();
-  const expiryDate = new Date(
-    today.getFullYear() - 3,
-    today.getMonth(),
-    today.getDate()
-  );
-
-  for (let i = 0; i < visitDatesArray.length; i++) {
-    const pet = visitDatesArray[i];
-    const lastVisitDate = new Date(pet.lastVisit);
-    if (lastVisitDate < expiryDate) {
-      return `${pet.name} has not visited in 3 years and needs to be taken off the register.`;
-      // Additional actions can be performed here
-    }
-  }
+export function checkVetsVisits(visitDatesArray) {
+  // Good luck!
 }
-
-// Example array of visit dates
-const today = new Date();
-
-const visitDatesArray = [
-  {
-    name: "Mowgli",
-    lastVisit: `${new Date(
-      today.getFullYear() - 3,
-      today.getMonth(),
-      today.getDate() + 1
-    )}`,
-  }, //Not over 3 years ago
-  {
-    name: "Socks",
-    lastVisit: `${new Date(
-      today.getFullYear() - 3,
-      today.getMonth(),
-      today.getDate() - 1
-    )}`,
-  }, // 1 day over 3 years
-  // {
-  //   name: "Bertie",
-  //   lastVisit: `${new Date(
-  //     today.getFullYear(),
-  //     today.getMonth(),
-  //     today.getDate() + 1
-  //   )}`,
-  // }, //Tomorrows date
-  { name: "Simba", lastVisit: `${today}` }, // Todays date
-  // { name: "Marcie", lastVisit: "ASDE-FH-IJ" }, // non-numeric date
-];
-
-// Check the visit dates
-console.log(checkVetVisits(visitDatesArray));

@@ -26,9 +26,9 @@ OVERALL TASK:
 
 3. Verify my tests by adding a function which passes the tests✅
 
-4. Remove working solution, share kata repo and add the description
+4. Remove working solution, share kata repo and add the description ✅
 
-5. Create a markdown file (plans, final result, feedback, challenges, what went well)
+5. Create a markdown file (plans, final result, feedback, challenges, what went well) ✅
 
 ![alt text](<Screenshot 2024-03-14 232126.png>) DISNEY IDEATION
 
@@ -103,16 +103,16 @@ MVP 2: ✅
 
 MVP 3:
 
-- Create a test that will fail dates in the future
+- Create a test that will pass with todays date as it is not more than 3 years ago ✅
 
 MVP 4:
 
-- Create a test that will pass with todays date as it is not more than 3 years ago
+- Create a test that will fail dates in the future✅
 
 MVP 5:
 -Create a test that will fail a non-numeric date
 
-REFLECTIONS: final result, feedback,
+REFLECTIONS:
 
 Challenges:
 
@@ -123,6 +123,8 @@ Challenges:
 Things I would do differntly nect time:
 
 - Change my story and function to be able to return all pets who visited over 3 years ago instead of the first one
+
+- Encourage the challenger to add error messages so instead of visit dates that are invalid returning as undefined, it will return as different message such as "Error: this is an invalid date"
 
 What went well:
 
